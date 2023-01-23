@@ -1,5 +1,5 @@
 {% load static%}
-<!DOCTYPE html>
+
 <html>
     <head>
 
@@ -16,7 +16,7 @@
         {%else%}
           <title>Django Blog</title>
         {%endif%}
-    </head
+    </head>
 <body>
   <header class="site-header">
     <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
@@ -48,9 +48,9 @@
             <div class="alert alert-{{ message.tags}}">
              {{message}}
             </div>
-        {%endfor%}
-      {%endif%}
-      {% block content %}{% endblock %}
+        {% endfor %}
+      {% endif %}
+      {%  block content %}{% endblock %}
     </div>
     <div class="col-md-4">
       <div class="content-section">
@@ -67,8 +67,6 @@
     </div>
   </div>
 </main>
-       
-
         <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

@@ -1,8 +1,8 @@
 
 {%extends "blog/base.html"%}
 {%block content%}
-   <div class="content-selection">
-       <form method="POST">
+   <div class="content-section">
+       <form action="{%url 'register'%}" method="POST">
            {% csrf_token %}
            <fieldset class="form-group">
                <legend class="border-bottom mb-4">Join Today</legend>
@@ -13,7 +13,7 @@
            </div>
        </form>
        <div class="border-top pt-3">
-           <small class="text-muted"><a class="ml-2" href="#">Already Have An Account?</a>
+           <small class="text-muted">Already Have An Account?<a class="ml-2" href="#">Sign In</a>
            </small>
        </div>
    </div>
